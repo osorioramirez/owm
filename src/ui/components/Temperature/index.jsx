@@ -5,11 +5,15 @@ type TemperatureProps = {
   round: boolean;
 };
 
+export const formatTemperature = (temperature: number, round = true) => (
+  `${round ? Math.round(temperature) : temperature}ºC`
+);
+
 export default class Temperature extends React.Component {
   props: TemperatureProps;
 
   render() {
-    const { round = true, value } = this.props;
-    return <span>{`${round ? Math.round(value) : value}ºC`}</span>;
+    const { value, round } = this.props;
+    return <span>{formatTemperature(value, round)}</span>;
   }
 }

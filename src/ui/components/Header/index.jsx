@@ -14,6 +14,7 @@ import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import { FormattedMessage } from 'react-intl';
 import LocaleSwitch from '../LocaleSwitch';
+import Link from '../Link';
 import css from './header.css';
 import messages from './messages';
 
@@ -26,7 +27,9 @@ export default class Header extends React.Component {
         <AppBar position="static">
           <Toolbar>
             <Typography type="title" color="inherit" className={css.title}>
-              <FormattedMessage {...messages.title} />
+              <Link to="/" className={css.titleLink} >
+                <FormattedMessage {...messages.title} />
+              </Link>
             </Typography>
             <LocaleSwitch />
           </Toolbar>

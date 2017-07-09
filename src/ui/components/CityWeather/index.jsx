@@ -17,6 +17,7 @@ type StateProps = {
 
 type OwnProps = {
   city: ICity;
+  compact: boolean;
 };
 
 type CityWeatherProps = StateProps & OwnProps;
@@ -26,7 +27,7 @@ class CityWeather extends React.Component {
   props: CityWeatherProps;
 
   render() {
-    const { city, weather } = this.props;
+    const { city, weather, compact } = this.props;
     return (
       <Card className={css.root}>
         <div className={css.row}>
@@ -47,9 +48,11 @@ class CityWeather extends React.Component {
             <Avatar src={weather && weather.largeIcon} className={css.weatherIcon} />
           </CardMedia>
         </div>
-        <CardContent>
-          { weather && <CityWeatherDetails weather={weather} />}
-        </CardContent>
+        {!compact && (
+          <CardContent>
+            { weather && <CityWeatherDetails weather={weather} />}
+          </CardContent>
+        )}
       </Card>
     );
   }

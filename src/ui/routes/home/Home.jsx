@@ -1,21 +1,35 @@
-/**
- * React Starter Kit (https://www.reactstarterkit.com/)
- *
- * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 import React from 'react';
-import CitiesList from '../../components/CitiesList';
+import Grid from 'material-ui/Grid';
+import { connect } from 'react-redux';
+import { Selectors } from '../../../application';
+import { ICity } from '../../../domain';
+import CityWeather from '../../components/CityWeather';
+
+type StateProps = {
+  cities: ICity[];
+};
+
+type HomeProps = StateProps;
 
 class Home extends React.Component {
+  props: HomeProps;
+
   render() {
+    const { cities } = this.props;
     return (
-      <CitiesList />
+      <Grid container gutter={24}>
+        {cities.map(city => (
+          <Grid key={city.id} item xs={6}>
+            <CityWeather city={city} compact />
+          </Grid>
+        ))}
+      </Grid>
     );
   }
 }
 
-export default Home;
+const mapStateToProps = (state): StateProps => ({
+  cities: Selectors.cities.data(state),
+});
+
+export default connect(mapStateToProps)(Home);

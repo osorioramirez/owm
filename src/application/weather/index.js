@@ -101,7 +101,7 @@ export default class Weather extends Module<WeatherState, Actions, Selectors, Ex
         ))
       ),
       historicalByCity: (state: any, cityId: string): IWeather[] => (
-        this.select(state, (localState: WeatherState) => localState.historical.data[cityId])
+        this.select(state, (localState: WeatherState) => localState.historical[cityId])
       ),
     };
   }
