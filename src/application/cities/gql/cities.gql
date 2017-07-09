@@ -1,0 +1,11 @@
+query cities {
+  cities {
+    id,
+    name,
+    country,
+    coordinate {
+      latitude,
+      longitude
+    }
+  }
+}

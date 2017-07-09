@@ -1,0 +1,7 @@
+{
+  "name": "intl",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.server.js",
+  "browser": "./index.client.js"
+}

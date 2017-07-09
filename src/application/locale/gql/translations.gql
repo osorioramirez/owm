@@ -1,0 +1,7 @@
+query translations($locale: String!) {
+  translations(locale: $locale) {
+    id,
+    messageId,
+    message
+  }
+}

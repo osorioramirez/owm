@@ -1,0 +1,34 @@
+[
+  {
+    "id": "component.city-weather.details",
+    "defaultMessage": "Details"
+  },
+  {
+    "id": "component.city-weather.temperature",
+    "defaultMessage": "Temperature"
+  },
+  {
+    "id": "component.city-weather.min-temperature",
+    "defaultMessage": "Min Temperature"
+  },
+  {
+    "id": "component.city-weather.max-temperature",
+    "defaultMessage": "Max Temperature"
+  },
+  {
+    "id": "component.city-weather.pressure",
+    "defaultMessage": "Pressure"
+  },
+  {
+    "id": "component.city-weather.wind-speed",
+    "defaultMessage": "Wind Speed"
+  },
+  {
+    "id": "component.city-weather.cloudiness",
+    "defaultMessage": "Humidity"
+  },
+  {
+    "id": "component.city-weather.calculated-at",
+    "defaultMessage": "Last calculation"
+  }
+]

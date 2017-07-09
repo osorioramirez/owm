@@ -1,0 +1,11 @@
+{
+  "component.city-weather.calculated-at": "Calculado",
+  "component.city-weather.cloudiness": "Humedad",
+  "component.city-weather.details": "Detalles",
+  "component.city-weather.max-temperature": "Temperatura máxima",
+  "component.city-weather.min-temperature": "Temperatura mínima",
+  "component.city-weather.pressure": "Presión",
+  "component.city-weather.temperature": "Temperatura",
+  "component.city-weather.wind-speed": "Velocidad del viento",
+  "component.header.title": "Open Weather Map - Ejemplo usando React & Redux & Saga "
+}

@@ -1,0 +1,20 @@
+query weather($unit: Unit, $locale: String) {
+  cities {
+    id,
+    weather(unit: $unit, locale: $locale) {
+      main,
+      description,
+      icon,
+      largeIcon,
+      temperature,
+      maxTemperature,
+      minTemperature,
+      pressure,
+      windSpeed,
+      windDegrees,
+      cloudiness,
+      calculatedAt,
+      updatedAt,
+    }
+  }
+}

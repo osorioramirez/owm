@@ -1,0 +1,38 @@
+[
+  {
+    "id": 3871336,
+    "name": "Santiago",
+    "country": "CL",
+    "coord": {
+      "lon": -70.64827,
+      "lat": -33.45694
+    }
+  },
+  {
+    "id": 3435910,
+    "name": "Buenos Aires",
+    "country": "AR",
+    "coord": {
+      "lon": -58.377232,
+      "lat": -34.613152
+    }
+  },
+  {
+    "id": 3936456,
+    "name": "Lima",
+    "country": "PE",
+    "coord": {
+      "lon": -77.028236,
+      "lat": -12.04318
+    }
+  },
+  {
+    "id": 7521912,
+    "name": "Consolação",
+    "country": "BR",
+    "coord": {
+      "lon": -46.657909,
+      "lat": -23.548491
+    }
+  }
+]

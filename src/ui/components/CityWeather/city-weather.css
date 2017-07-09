@@ -1,0 +1,16 @@
+.root {
+  max-width: 500px;
+}
+
+.row {
+  display: flex;
+}
+
+.alignRight {
+  margin-left: auto;
+}
+
+.weatherIcon {
+  width: 128px;
+  height: 128px;
+}
