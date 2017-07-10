@@ -13,7 +13,7 @@ This example is based on [React Starter Kit](https://www.reactstarterkit.com) bo
 
 ### Execution (PROD)
 
-  * ```npm build```
+  * ```npm run build```
   * ```cd build```
   * ```npm install```
   * ```npm start```
