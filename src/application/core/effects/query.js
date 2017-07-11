@@ -8,7 +8,7 @@ export type Variables = {
 
 function* handleQuery<T>(options: WatchQueryOptions) {
   const client: ApolloClient = yield getClient();
-  const response: ApolloQueryResult<T> = yield call(async () => client.query(options), options);
+  const response: ApolloQueryResult<T> = yield call(client.query, options);
   return yield response.data;
 }
 

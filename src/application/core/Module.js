@@ -13,6 +13,7 @@ export interface IModule<State, Actions, Selectors, ExtraActions, ExtraSelectors
   types?: ActionTypes;
   defaultState?: State;
   parent?: IModule;
+  modules?: IModule<any>[];
   actions: Actions & ExtraActions;
   selectors: Selectors & ExtraSelectors;
   reducer(state: State, action: Action): State;

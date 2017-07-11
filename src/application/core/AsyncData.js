@@ -3,7 +3,7 @@ import { spawn, take, call, put, all } from 'redux-saga/effects';
 import { Action, createAction } from './Action';
 import Module, { IModuleConfig, mergeConfig } from './Module';
 
-const FETCH = 'FETCH';
+export const FETCH = 'FETCH';
 export const FETCH_SUCCESS = 'FETCH_SUCCESS';
 export const FETCH_FAILURE = 'FETCH_FAILURE';
 
